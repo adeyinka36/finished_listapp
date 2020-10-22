@@ -58,7 +58,7 @@
        <?php }
         
           else{
-              echo "<span>Unsused list is currently  empty </span>";
+              echo "<span class=empty>Unsused list is currently  empty </span>";
           
               }?>
           </div>
@@ -77,7 +77,7 @@
        <?php }
         
           else{
-              echo "<span>Used list is currently  empty </span>";
+              echo "<span class=empty>Used list is currently  empty </span>";
           
               }?>
           </div>

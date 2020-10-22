@@ -92,3 +92,10 @@ a{
 .used{
     margin-top: 1.5rem;
 }
+
+.empty{
+    font-size: 3rem;
+    margin-top: .5rem;
+    letter-spacing: .25rem;
+    color: darkred;
+}
