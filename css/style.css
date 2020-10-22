@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type:none;
+}
+
+
+.controlls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+    padding-right: .2rem;
+}
+
+.controlls button,p{
+    padding: .5rem;
+    transition: .25s;
+}
+
+.controlls button:hover{
+    cursor: pointer;
+    background-color:lightblue;
+    
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+ li{
+     font-size: 2.5rem;
+    border:1px solid black;
+    padding: .5rem;
+    transition: .4s;
+    margin-top: .3rem;
+    
+}
+
+li:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+
+
+.game{
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top:0;
+    left:0;
+}
+
+.game p{
+    font-size: 3rem;
+   
+
+}
+.game{
+    background-color:white;
+    z-index:20;
+}
+
+.begin{
+    padding:.5rem;
+    font-size: 2.5rem;
+}
+
+.begin:hover{
+    cursor: pointer;
+    color:gray;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+.controlls p, .used p{
+    font-size: 3rem;
+    color:darkslategrey;
+}
+
+.used{
+    margin-top: 1.5rem;
+}
