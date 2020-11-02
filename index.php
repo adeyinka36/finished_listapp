@@ -11,17 +11,18 @@
           include ("inc/func.php");
           
           createTables($conn);
-          $numbers= getNumbers($conn,"true");
+          $allNumbers= getNumbers($conn,"true");
 
         //   insert numbers into  database if its just been created
-          if(!$numbers){
+          if(!$allNumbers){
             $list= initialNumbers();
             insertNumbers($conn,$list);
+            $allNumbers= getNumbers($conn);
           }
           
           
           
-          $allNumbers= getNumbers($conn);
+         
           
           $unusedList=[];
           $usedList=[];
@@ -58,7 +59,7 @@
        <?php }
         
           else{
-              echo "<span>Unsused list is currently  empty </span>";
+              echo "<span class=empty>Unsused list is currently  empty </span>";
           
               }?>
           </div>
@@ -77,7 +78,7 @@
        <?php }
         
           else{
-              echo "<span>Used list is currently  empty </span>";
+              echo "<span class=empty>Used list is currently  empty </span>";
           
               }?>
           </div>
